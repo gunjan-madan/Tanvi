@@ -14,8 +14,8 @@ print("*** Task 1: ***")
 """-----------Task 2:  Test the Condition ---------------"""
 print(" ")
 print("*** Task 2: ***")
-# Ready to try out your first program to test a condition.
-# Uncomment the statements and click on Run
+# Write the program to find greatest number of two.
+#Take two numbers as input from users and write the logic to find greatest.
 
 
 """-----------Task 3:  Even or Odd ---------------"""

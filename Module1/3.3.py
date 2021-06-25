@@ -3,14 +3,14 @@ print(" ")
 print("*** Task 1:***")
 
 
-p=6 + 10 / 2                      #
-q=(6 + 10) / 2                    #
-r=2 + 3 * 5                       #
-s=(2 + 3) * 5                     #
-t=6 +(8 / 4) - 2 * 3              #
-v=(6 + (8 / 4) - 2) * 3           #
+p=6 + 10 / 2                      #11
+q=(6 + 10) / 2                    #8
+r=2 + 3 * 5                       #17
+s=(2 + 3) * 5                     #25
+t=6 +(8 / 4) - 2 * 3              #2
+v=(6 + (8 / 4) - 2) * 3           #18
 
-#print
+print(p,q,r,s,t,v)
 
 '''*****Task 2: Display the Report Card******'''
 print(" ")
@@ -22,3 +22,13 @@ print("*** Task 2:***")
 # Find the total marks and calculate the percentage scored
 # Display both the total marks and the average achieved 
 # [Hint: Total marks scored divided by the number of subjects gives you the average]
+English = int(input("Enter you English Grade:"))
+Science = int(input("Enter you Science Grade:"))
+Math = int(input("Enter you Math Grade:"))
+Computer_Science = int(input("Enter you Computer Science Grade:"))
+History = int(input("Enter you History Grade:"))
+Total_Sum = (English + Science + Math + Computer_Science + History)
+Total_Percentage = Total_Sum / 5
+
+print("The total marks are: ",Total_Sum)
+print("The total percentage is: ", Total_Percentage)

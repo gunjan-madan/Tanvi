@@ -7,19 +7,19 @@ print("Hello All!\tLets Learn Python")
 
 #Write the following sentences into different lines using \n.
 #I love Computer Science. I am learning Python using Replit. Trying to print all the sentences in new lines.
-
+print("I love Computer Science.\nI am learning Python using Replit.\nTrying to print all the sentences in new lines")
 
 
 # Lets try. Uncomment the line below and click Run:
-#print("I am studying about \\n in the class")
+print("I am studying about \\n in the class")
 
 """-----------Task 2:  What's in store? ---------------"""
 print(" ")
 print("*** Task 2: ***")
 #Let's take a look. Uncomment the statements below and click Run.
-#print(1+2)
-#print("1"+"2")
+#print(1+2) 3
+#print("1"+"2") 12
 #print("robin" +"hood")
 #print(2*2)
-#print(2*"hello")
+print(10*"hello ")
 

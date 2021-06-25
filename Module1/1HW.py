@@ -8,3 +8,7 @@ print ("**** Task 1: *****")
 #  - Hobbies you enjoy
 #  - Why you like coding
 #  - So let's get started!!
+print("Hello, My name is Tanvi Sharma.")
+print("I am a rising 10th grader.")
+print("My favorite subject is Science.")
+print("I enjoy playing soccer and reading books.")

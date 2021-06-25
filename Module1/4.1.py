@@ -8,4 +8,6 @@ print("*** Task 1:***")
 # Remember to mention that the temperature input required should be in fahrenheit.
 # Convert the temperature using the formula given above.
 # Now display the result
-
+Fahrenheit = float(input("Enter the temperature in Fahrenheit: "))
+Celsius_Temp = (Fahrenheit - 32) * 5 / 9
+print("Here is you temperature in Celsius: ", Celsius_Temp)

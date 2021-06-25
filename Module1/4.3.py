@@ -18,10 +18,10 @@ dataType4=4.5                     #float
 
 #how to find the datatype  of any value
 #print("Check the Data types")
-#print("Data type of dataType1 is: ", type(dataType1))
-#print("Data type of dataType2 is: ", type(dataType2))
-#print("Data type of dataType3 is: ", type(dataType3))
-#print("Data type of dataType4 is: ", type(dataType4))
+print("Data type of dataType1 is: ", type(dataType1))
+print("Data type of dataType2 is: ", type(dataType2))
+print("Data type of dataType3 is: ", type(dataType3))
+print("Data type of dataType4 is: ", type(dataType4))
 
 """-----------Task 2: Whats the data type? ---------------"""
 print(" ")
@@ -30,10 +30,10 @@ print("*** Task 2: ***")
 # What is the data type you will use  for the following?
 # Uncomment the print statements, type the data type after the colon and click Run.
 # The first one is done for you
-#print("Name of your friend: String")
-#print("Your schools name: ? ") 
-#print("Your age: ?")
-#print("Your height in feet: ?")
-#print("Do you have a sibling: ?")
-#print("Color of the leaf: ?")
-#print("Number of books in your shelf: ?")
+print("Name of your friend: String")
+print("Your schools name: string ") 
+print("Your age: integer")
+print("Your height in feet: float")
+print("Do you have a sibling: boolean")
+print("Color of the leaf: string")
+print("Number of books in your shelf: integer")

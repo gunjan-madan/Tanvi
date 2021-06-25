@@ -1,12 +1,12 @@
 """-----------Task 1: Expression Galore ---------------"""
-print(" ")
-print("*** Task 1: ***")
-# Uncomment the statements and click Run:
-#a = input("Enter an integer value ")
-#b = input("Enter a float  value")
-#c = input("Enter another integer value ")
-#expr =  (a / b) * c
-#print ("result is: ", expr)
+# print(" ")
+# print("*** Task 1: ***")
+# # Uncomment the statements and click Run:
+# a = int(input("Enter an integer value "))
+# b = float(input("Enter a float  value"))
+# c = int(input("Enter another integer value "))
+# expr =  (a / b) * c
+# print ("result is: ", expr)
 
 #Lets Fix the errors above.abs
 
@@ -23,12 +23,22 @@ print("*** Task 2: ***")
 # Regular Size Notebook - Rs. 41.40
 # Write a Python program for Ryan, to calculate the total amount,and generate the bill for the customer.
 
+# Pencils = int(input("Enter the number of pencils that you bought: "))
+# Pens = int(input("Enter the number of pens that you bought: "))
+# Long_Size_Notebooks = int(input("Enter the number of long size notebooks that you bought: "))
+# Regular_Size_Notebook = int(input("Enter the number of regular size notebooks that you bought: "))
+# Total_Price = (Pencils * 75) + (Pens * 30) + (Long_Size_Notebooks * 127.50) + (Regular_Size_Notebook * 41.40)
+# print("Here is your bill: ", Total_Price)
+
+
 """-----------Task 3: Speed Conversion ------"""
 print(" ")
 print("*** Task 3: ***")
 # Write a program to convert the speed from km/hr to m/s
-# [Hint:To convert km/hr into m/sec, multiply the number by 5 and then divide it by 18.]
-
+# # [Hint:To convert km/hr into m/sec, multiply the number by 5 and then divide it by 18.]
+# Km_Hr = float(input("Enter your speed in km/hr: "))
+# M_S = Km_Hr * 5 / 18
+# print("Here is your speed in m/sec: ", M_S)
 
 
 
@@ -38,3 +48,7 @@ print(" ")
 print("*** Task 4: ***")
 #Write a program to accept the radius of a circle, and calculate its area and perimeter. 
 #[Hint:Area = 3.14 * (radius) to power of 2    and  Perimeter = 2*3.14*radius]
+Radius = int(input("Enter your radius: "))
+Area = 3.14 * (Radius**2)
+Perimeter = 3.14 * 2 * Radius
+print("Here is your Area & Perimeter: ", Area, Perimeter)

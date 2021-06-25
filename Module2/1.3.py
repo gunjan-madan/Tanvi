@@ -5,11 +5,20 @@
 
 
 """-----------Task 1:  All in One ---------------"""
-print(" ")
-print("*** Task 1: ***")
-# Do you know what are isosceles and scalene triangles? 
-# Write a program to check if a triangle is equilateral, scalene or isosceles.
+# print(" ")
+# print("*** Task 1: ***")
+# # Do you know what are isosceles and scalene triangles? 
+# # Write a program to check if a triangle is equilateral, scalene or isosceles.
+# side_a = int(input("Enter your first side: "))
+# side_b = int(input("Enter your second side: "))
+# side_c = int(input("Enter your third side: "))
 
+# if (side_a == side_b) and (side_b == side_c):
+#   print("You have an equilateral triangle.")
+# elif (side_a == side_b) or (side_b == side_c) or (side_a == side_c):
+#   print("You have an isosceles triangle.")
+# else:
+#   print("You have a scalene triangle.")
 
 """-----------Task 1.2:  All in One ---------------"""
 print(" ")
@@ -17,18 +26,37 @@ print("*** Task 1.2: ***")
 #The program takes a number as an input
 #Program shall check if the number is divisible by both 3 and 4
 
+# number = int(input("Enter your number: "))
 
+# if (number % 3 == 0) and (number % 4 == 0):
+#   print("Your number is divisible by 3 and 4.")
+# elif (number % 3 == 0):
+#   print("Your number is divisible by 3.")
+# elif (number % 4 == 0):
+#   print("Your number is divisible by 4.")
+# else:
+#   print("Your number is not divisible by 3 or 4.")
 
-"""---------Task 2:   Its raining Discount -------------"""
-print(" ")
-print("*** Task 2: ***")
+# """---------Task 2:   Its raining Discount -------------"""
+# print(" ")
+# print("*** Task 2: ***")
 # Your store is giving a discount on the total purchase amount based on customer membership. 
 # Write a program that calculates the discounted amount based on the below mentioned conditions:
 # If membership is silver, 5% discount
 # If membership is silver+ or gold, discount is 10%
 # If membership is gold+ or diamond, discount is 15%
 # if membership is platinum membership discount is 20%
-
+membership = input("Enter your membership: ")
+if membership.lower() == "silver":
+  print("You get a 5% discount!")
+elif (membership.lower() == "silver+") or (membership.lower() == "gold"):
+  print("You get a 10% discount!")
+elif (membership.lower() == "gold+") or (membership.lower() == "diamond"):
+  print("Your discount is 15%!")
+elif (membership.lower() == "platinum"):
+  print("Your discount is 20%!")
+else:
+  print("Sorry, you do not get a discount.")
 
 
 

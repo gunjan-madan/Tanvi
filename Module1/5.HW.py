@@ -17,3 +17,13 @@ print("*** Task 1: ***")
 # So why wait, get programming!!
 # Hint: For fencing, you need to get the perimeter of the sports field which is rectangular ( formula: perimeter - 2(length + width))
 # Hint: For the artificial turf/grass, you need to get the area of the rectangular hockey pitch (Area = length * width] 
+
+Sports_Field_Length = float(input("Enter the length: "))
+Sports_Field_Width = float(input("Enter the width: "))
+Sports_Fence = 2 * (Sports_Field_Length + Sports_Field_Width)
+print("Here is your sports fence measurement: ", Sports_Fence)
+
+Turf_Length = float(input("Enter the length: "))
+Turf_Width = float(input("Enter the width: "))
+Turf_Area = Turf_Length * Turf_Width
+print("Here is your turf area: ", Turf_Area)

@@ -9,9 +9,15 @@ print()
 # 3 3 3
 # 4 4 4 4
 # 5 5 5 5 5
-
 # Can you help him create it?
 
+rows=6
+for i in range(1, rows):
+  for j in range(i):
+    print(i, end=" ")
+  print()
+  
+  
 
 ''' Task 2: Number Match'''
 print("***** Task 2: *****")
@@ -27,3 +33,8 @@ print()
 # Any ideas how would you do it? Did you notice the pattern ? Can you display the pattern using a single loop?
 # Hint: We can do this by using 2 loops. One for printing the numbers from 1 till the number entered by the user on the same row. Second for printing the above row 4 times
 # Give it a try 
+maximum = int(input("Enter a maximum number: \n"))
+for i in range(4):
+  for j in range(1, maximum + 1):
+    print(j, end = " " )
+  print()

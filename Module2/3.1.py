@@ -11,6 +11,21 @@ print()
   #if user guessed lower than actual number, then print "TOO LOW"
    #if user guessed lower than actual number, then print "TOO HIGH"
 
+# winner = 17
+# ask = int(input("enter your guess: "))
+# if ask == 17:
+#   print("YOU WIN!!!")
+# else:
+#   if (ask < winner) and (ask >= 1) :
+#     print("TOO LOW!!!")
+#   elif (ask > winner) and (ask <= 20) :
+#     print("TOO HIGH!!!")
+#   else:
+#     print("Please enter a number from 1-20")
+
+
+
+
 '''Task 2: Nested If-else'''
 print()
 print("*** Task 2: ***")
@@ -27,3 +42,26 @@ print()
 #AU               greater than 2kg            $25
 
 # print("This Program will caluculate Shipping Cost")
+
+country_code = int(input("Enter your country code:\n1. US\n2. AU\n"))
+weight = float(input("Enter weight: "))
+if country_code == 1:
+  if weight <= 1:
+    print("Shipping Cost = $5")
+  elif weight < 2 :
+    print("Shipping Cost = $10")
+  elif weight >= 2:
+    print("Shipping Cost = $20")  
+  else:
+    print("Enter a weight greater than zero")
+elif country_code == 2:
+  if weight <= 1:
+    print("Shipping Cost = $10")
+  elif weight < 2 :
+    print("Shipping Cost = $15")
+  elif weight >= 2:
+    print("Shipping Cost = $25") 
+  else:
+    print("Enter a weight greater than zero") 
+else:
+  print("Enter a valid Country Code")

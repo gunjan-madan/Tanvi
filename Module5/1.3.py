@@ -6,24 +6,24 @@
 print("***** Task 1: *****")
 print()
 # Uncomment the below statements and click Run. Observe the output.
-#txt1 = "Hi I am {name}, and am {age} years old".format(name = "Ria", age = 12)
-#print(txt1)
+txt1 = "Hi I am {name}, and am {age} years old".format(name = "Ria", age = 12)
+print(txt1)
 # What exactly happened?
 # The format() method inserted the name and age in the text where the{ } braces were placed. The { } are called placeholders. 
 # Here are some more examples. Uncomment the statements and click run. Observe the output.
-#txt2 = "Hi I am {0}, and am {1} years old".format("Ria",12)
-#print(txt2)
-#txt3 = "Hi I am {}, and am {} years old".format("Ria",12)
-#print(txt3)
+txt2 = "Hi I am {0}, and am {1} years old".format("Ria",12)
+print(txt2)
+txt3 = "Hi I am {}, and am {} years old".format("Ria",12)
+print(txt3)
 
-#txt = "For only {price} dollars!"
-#print(txt.format(price = 25))
+txt = "For only {price} dollars!"
+print(txt.format(price = 25))
 
-#txt = "For only {price:.2f} dollars!"
-#print(txt.format(price = 25))
+txt = "For only {price:.2f} dollars!"
+print(txt.format(price = 25))
 
-#txt = "The temperature today is {:-} degrees celsius."
-#print(txt.format(-2))
+txt = "The temperature today is {:-} degrees celsius."
+print(txt.format(-2))
 # In the above statements you would have noticed the following functionalities:
 # {0}, {1} - Denotes the position of the string or in other words are the numbered placeholder
 # {} - Denotes empty placeholders where the value will be  be substituted
@@ -36,18 +36,20 @@ print()
 # Given below is a story that has placeholders, wherein you need to fill values using the format method.
 # Lets see the story that you come out with.
 # Uncomment the statements below, fill in the values for the format method and see how the story unfolds.
-#txt1 = "Kabir is {} years old and studies in {} grade in his hometown {}". format()
-#txt2 = "One of Kabir's hobbies is {} and he spends {} hours everyday trying to master it".format()
-#txt3 = "He wishes to become {} once he grows up and serve the {}".format()
-#print(txt1)
-#print(txt2)
-#print(txt3)
+
+# txt1 = "Kabir is {} years old and studies in {} grade in his hometown {}". format(11,4,"corn")
+# txt2 = "One of Kabir's hobbies is {} and he spends {} hours everyday trying to master it".format("drawing", 4)
+# txt3 = "He wishes to become {} once he grows up and serve the {}".format("musician", "people")
+# print(txt1)
+# print(txt2)
+# print(txt3)
 
 '''Task 3 : Role Model'''
 print("***** Task 3: *****")
 print()
 # Write a program in which you use the format() method to describe your favourite role model
 
-
+txt1 = "My role model is {}. She is very {}. I admire her work in {}.".format("my mom", "nice", "life")
+print(txt1)
 
 '''Fantastic!! You have become confident in working with in-built functions. Awesome!!'''

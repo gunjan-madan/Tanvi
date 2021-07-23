@@ -7,18 +7,18 @@ print("***** Task 1: *****")
 print()
 # Uncomment the statements below and click Run.
 
-#def func(x=1):
+# def func(x=1):
 #  y0 = x+ 1
 #  y1 = x * 3
 #  y2 = y0 ** 3
 #  print("Value of y0 is: ", y0)
 #  print("Value of y1 is: ", y1)
 #  print("Value of y2 is: ", y2)
-#print("Values without arguments")
-#func()
-#print()
-#print("Values with arguments")
-#func(3)
+# print("Values without arguments")
+# func()
+# print()
+# print("Values with arguments")
+# func(3)
 
 # What did you observe? 
 # You can specify a default value for an argument.
@@ -34,6 +34,25 @@ print()
 # - If both the numbers are equal, it returns 0
 # Set a default value for the argument
 # Hint : Use if-else in the function
+
+def num(x = 0, y = 0):
+  if x < y:
+    return y
+  elif y < x:
+    return x
+  else:
+    return 0
+numb=num()
+if numb ==0:
+  print("Both numbers are equal.")
+
+x = int(input("Enter your 1st value: "))
+y = int(input("Enter your 2nd value: "))
+result = num(x , y)
+if result==0:
+  print("Both numbers are equal.")
+else:
+  print("Your greater number is ", result)
 
 ''' Task 3: Factorials '''
 print("***** Task 3: *****")

@@ -6,25 +6,25 @@ print()
 # The quest is asking you to analyze and observe the program output.
 # Uncomment the statements below and click Run
 
-#for i in range(15):
-#  if (i % 2) == 0:
-#    print(i,"is a even number")
-#  else:
-#    print(i,"is a odd number")
+for i in range(15):
+ if (i % 2) == 0:
+   print(i,"is a even number")
+ else:
+   print(i,"is a odd number")
 
 # The range() function, takes three arguments: range(start, stop, step)
 #start and step and optional parameters.
 
 # Uncomment the statement below and click Run:
 
-#x=0
-##define a while loop
-#while(x <4):
-#  print(x)
-#  x = x+1
-##Define a for loop 
-#for x in range(4):
-# print(x)
+x=0
+#define a while loop
+while(x <4):
+ print(x)
+ x = x+1
+#Define a for loop 
+for x in range(4):
+  print(x)
 
 
 '''Task 2: Who is the odd one out'''
@@ -32,6 +32,9 @@ print("**** Task 2: ****")
 print()
 # Math πrate is ready to take the next small steps in the coding quest. 
 # Write a program that prints the odd numbers that occur between the 10 and 20
+for i in range(10,21):
+  if i % 2 != 0:
+    print(i)
 
 
 
@@ -42,6 +45,13 @@ print()
 #Take three inputs from user: starting number, ending number and skip interval.
 #Print respective numbers
 
+# start = int(input("Enter your starting number: "))
+# stop = int(input("Enter your stopping number: "))
+# step = int(input("Enter your stepping number: "))
+# for i in range(start,stop + 1,step):
+#   print(i)
+
+
 '''Task 4: Sum and Product'''
 print("**** Task 4: ****")
 print()
@@ -50,6 +60,15 @@ print()
 # Total sum of the numbers between the starting and ending number
 # Product of the numbers between the starting and ending number
 
+# start = int(input("Enter your starting number: "))
+# stop = int(input("Enter your stopping number: "))
+# sums = 0
+# product = 1
+# for i in range(start,stop + 1):
+#   sums = sums + i
+#   product = product * i
+# print("Here is sum: ", sums, "Here is product: ", product)
+  
 
 '''Task 5: Lets get Even'''
 print("**** Task 5: ****")
@@ -62,3 +81,10 @@ print()
 # If the number is an even number, then the output must display the square of the number
 # If the number is odd, then the output must display the cube of the number
 # Are you ready to help him with the program? 
+start = int(input("Enter your starting number: "))
+end = int(input("Enter your ending number: "))
+for i in range(start,end + 1):
+  if i % 2 == 0:
+    print(i**2)
+  else:
+    print(i**3)

@@ -9,14 +9,14 @@ print("****Task 1: *****")
 # -  triangle [Formula: length + base + side]
 # The menu has been created for you.
 # Uncomment the statements and for each of the if statements write the relevant code.
-#print("***** Perimeter Calculator *****")
-#print("Select the shape for which the perimeter needs to be calculated")
-#print("1. Rectangle")
-#print("2. Square")
-#print("3. Circle")
-#print("4. Triangle")
-#choice=int(input("Enter your choice: "))
-#if choice==1:
+print("***** Perimeter Calculator *****")
+print("Select the shape for which the perimeter needs to be calculated")
+print("1. Rectangle")
+print("2. Square")
+print("3. Circle")
+print("4. Triangle")
+choice=int(input("Enter your choice: "))
+if choice==1:
   
 #elif choice==2:
    

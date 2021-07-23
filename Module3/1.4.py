@@ -11,7 +11,17 @@ print()
 # - Total cost  of the goods 
 # - Total number of goods.
 
-
+print("Enter 0 to stop when you are done entering")
+cost = 0
+number = 0
+Price = 1
+while Price != 0:
+  Price = float(input("Enter the price: "))
+  number = number + 1
+  cost = cost + Price
+print("Here is your total cost: ", cost)
+print("Here is your number of items: ", number)
+ 
 
 
 
@@ -21,9 +31,13 @@ print()
 # Your friend Sam has a jar with 5 cups of fresh lemonade.  
 # Jack has some glasses which hold 1.5 cups each of liquid.  
 # How many glasses of lemonade can Jack serve?
-
-
-
+cup = 3
+glasses = 0
+total = 15
+while total > 0:
+  total = total - cup
+  glasses = glasses + 1
+print(glasses)
 '''Task 3: Population Calculator '''
 print("**** Task 3: ****")
 print()
@@ -38,6 +52,16 @@ print()
 # Hint1: Target population can be calculated as population * reduction
 # Hint2: Change in population can be calculated using the formula (current_pop * birthrate) - (current_pop * deathrate)
 
+birthrate = 0.015
+deathrate = 0.023
+starting_pop = 10000000
+years = 0
+target = starting_pop * 0.1
+while starting_pop >= target:
+  change = (starting_pop * birthrate) - (starting_pop * deathrate)
+  starting_pop = starting_pop + change
+  years = years + 1
+print("Here is your time: ", years)
 
 
 

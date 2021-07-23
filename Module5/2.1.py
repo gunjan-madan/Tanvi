@@ -10,7 +10,7 @@ print()
 # Uncomment the below statements and click Run. Observe the output.
 import re
 txt = "HelloWorld"
-x = re.search("World", txt)
+x = re.search("Hello", txt)
 print(x)
 if x:
   print("Match found")
@@ -34,27 +34,34 @@ else:
 #   -Has at least one special symbol.
 #   -Should be between 6 to 20 characters long.
 # Uncomment the statement and complete the program
-#import re                                                 
-#p= input("Input your password: ")
-#x = True
-#while x:                          # while loop
+
+# import re                                                 
+# p= input("Input your password: ")
+# x = True
+# while x:                          # while loop
 #  if (len(p)<6 or len(p)>20):     # Password length
-#      break                       # break statement
-#  elif :                          # Lowercase validation
-      
-#  elif not                     # check for number              
-      
-#  elif not:                    # check for uppercase
-#      break
-#  elif not :                   #check for special character
-#      break
-#  elif:                      #check for whitespace character
-#      break
+    
+#     break                       # break statement
+#  elif not re.search("[a-z]", p):  
+#             # Lowercase validation
+#    break
+#  elif not re.search("[0-9]", p): 
+#                # check for number 
+#     break
+#  elif not re.search("[A-Z]", p):
+#              # check for uppercase
+#     break
+#  elif not re.search("[$#@!]",p):
+#        #check for special character
+#     break
+#  elif re.search("\s", p):
+#          #check for whitespace character
+#     break
 #  else:
 #      print("Valid Password")
 #      x=False
 #      break
-#if x:
+# if x:
 #  print("Not a Valid Password")
 
 '''Task 2: How many vowels are in your name?'''
@@ -64,11 +71,32 @@ print()
 # If there are no vowels in the name, display a message -  “You have a unique with no vowels!!”
 # If vowels are present in the name, display a message -”You have a lovely name!”
 
+# import re
+# name = input("Enter your name: ")
+# x = re.search("[aeiou]",name.lower())
+
+# if x:
+#   print("You have a lovely name!")
+# else:
+#   print("You have a unique with no vowels")
+
 
 '''Task 3: This or That'''
 print("***** Task 2:******")
 print()
 # Write a program that asks the user to input any text. The text could be a couple of words or a line or a quote.
 # Your program must find if the text entered by the user has the word “this” or “that”.
+
+txt = input("Enter your text: ")
+x = re.search("this",txt.lower())
+y = re.search("that",txt.lower())
+if x == None:
+  print("no this found")
+else:
+  print("This found")
+if y == None:
+  print("no that found")
+else:
+  print("That found")
 
 '''Fantastic!! You are getting confident in working with in-built Python modules/packages. Way to go!!'''

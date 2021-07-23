@@ -5,11 +5,11 @@
 print("**** Task 1: ****")
 print()
 # One of the ways is to use 5 print statements like this:
-print ("Snoopy")
-print ("Snoopy") 
-print ("Snoopy")
-print ("Snoopy")
-print ("Snoopy")
+# print ("Snoopy")
+# print ("Snoopy") 
+# print ("Snoopy")
+# print ("Snoopy")
+# print ("Snoopy")
 #Better way is to use while loop
 # The structure of the while loop is:
 ''' while <condition>:
@@ -17,11 +17,11 @@ print ("Snoopy")
       code to be repeated
     Code outside the loop '''
 # Uncomment the next 4 lines to see the while loop in:
-#counter = 1      	         # initialize a counter variable
-#while counter <= 5:       # loop condition
- #print("Snoopy")  	   # code to execute
- #counter = counter + 1
-
+counter = 1      	         # initialize a counter variable
+while counter <= 5:       # loop condition
+ print("Snoopy")  	   # code to execute
+ counter = counter + 1
+print("hi")
 
 '''Task 2: Print While You Can'''
 print("**** Task 2: ****")
@@ -29,11 +29,19 @@ print()
 # Sam is having fun learning with you. He wants  you to write a program to print the first 100 numbers.
 # Can you do that? 
 print("**Printing the first hundred numbers**")
-
+number = 1
+while number <= 100:
+  print(number)
+  number = number + 1
 
 #Also find total of first hundred numbers
 print("**Printing the sum of first hundred numbers**")
-
+number = 1
+total = 0
+while number <= 100:
+  total = total + number
+  number = number + 1
+print(total)
 
 
 '''Task 3: Print Within Limits'''
@@ -41,7 +49,13 @@ print("**** Task 3: ****")
 print()
 # The previous task has made Sam interested to write a program where he can find the sum of numbers from 1 to a number that the user wants. Can you help him?
 # Hint: You can take that limit as input from the user, every time the program runs
-
+limit = int(input("Enter your number: "))
+total = 0
+number = 1
+while number <= limit:
+  total = total + number
+  number = number + 1
+print(total)
 
 
 
@@ -52,3 +66,7 @@ print()
 # He now wants to understand if he can do a reverse printing of numbers i.e.backward counting
 # He wants you to write a program that will print the first 50 numbers backwards.
 # Hint: Instead of assigning 0 to the counter, set it to 50, and decrement the counter(i.e. subtract by 1)
+number = 50
+while number >= 1:
+  print(number)
+  number = number - 1

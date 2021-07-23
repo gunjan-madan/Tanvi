@@ -21,6 +21,9 @@ print()
 
 # Now  write a program that takes a positive or negative number as the input  and displays it as a positive number.
 
+# number = int(input("Enter your number: "))
+# print(abs(number))
+
 '''Task 2: What's the total?'''
 print("***** Task 2: ***** ")
 print()
@@ -28,18 +31,20 @@ print()
 # Can you write a program for the same?
 # Your program might have been on the similar line:
 
-#tot=0
-#for i in range(0,11):
-# tot=tot+i
-#print(tot) 
-# Uncomment the statement and see how it works::
-#tot=sum(range(0,11))
-#print(tot)
+# tot=0
+# for i in range(0,11): 
+#   tot=tot+i
+# print(tot) 
+# # Uncomment the statement and see how it works::
+# tot=sum(range(0,11))
+# print(tot)
 
 # The way sum works is: sum(iterable, start)
 #  - where iterable can be a list of numbers or a range of numbers.
 #  - start is an optional parameter start, that will be added to the final sum. Since it is optional, if you do not specify it is taken as 0.
 
+# total = sum(range(1,11,2))
+# print(total)
 
 # Can you tweak the program to print the total of odd numbers in the range of 0 to 10?
 
@@ -49,27 +54,27 @@ print()
 # Python has two inbuilt functions that will help you find the maximum and minimum quickly.
 # Uncomment the statements below and click Run
 
-#print("Check this out!!")
-#x=56
-#y=90
-#z=78
-#p=max(x,y,z)
-#s=min(x,y,z)
-#print(p)
-#print(s)
-#print("Here is another one!!")
-#x="A"
-#y="G"
-#z="U"
-#p=max(x,y,z)
-#s=min(x,y,z)
-#print(p)
-#print(s)
+# print("Check this out!!")
+# x=56
+# y=90
+# z=78
+# p=max(x,y,z)
+# s=min(x,y,z)
+# print(p)
+# print(s)
+# print("Here is another one!!")
+# x="A"
+# y="G"
+# z="U"
+# p=max(x,y,z)
+# s=min(x,y,z)
+# print(p)
+# print(s)
 
 # Uncomment the statement below and observe the result:
 
-#grades = "AABABBACBAABCD"
-#print(max(grades))
+# grades = "AABABBACBAZABCD"
+# print(max(grades))
 
 '''Task 4: What's your score'''
 print("***** Task 4: ***** ")
@@ -79,6 +84,14 @@ print()
 # - Scores in the following subjects - Mathematics, Science and English
 # Your program then needs to display the highest score for that student
 
+# for i in range(5):
+#   grade = int(input("Enter your grade: "))
+#   mathscore = int(input("Enter your math score: "))
+#   sciencescore = int(input("Enter your science score: "))
+#   englishscore = int(input("Enter your english score: "))
+#   student = max(mathscore, sciencescore, englishscore)
+#   print(student)
+
 '''Task 5: Divisible or Not'''
 print("***** Task 5: ***** ")
 print()
@@ -86,31 +99,41 @@ print()
 # Using the divmod() function you can find both through a single operation. Here is how you would do it:
 # Uncomment the statements below, run them and analyze the oupt you get:
 
-#print(divmod(8,3))
-#print(divmod(11,4))
-#print(divmod(10,2.5))
-#print(divmod(52.2,12))
+print(divmod(8,3))
+print(divmod(11,4))
+print(divmod(10,2.5))
+print(divmod(52.2,12))
 
 #We can also use two variables to store the value of quotient and remainder
 
-# q,r = divmod(13,5)
-# print(q,r)
+q,r = divmod(13,5)
+print(q,r)
 
 '''Task 6: Prime or Not'''
 print("***** Task 5: ***** ")
 print()
 #Write the program to take a input from user and check if it is a prime or not(using divmod)
 
+# prime = int(input("Enter your number: "))
+# flag = 1
+# for i in range(2, prime): 
+#   q,r = divmod(prime, i)
+#   if r ==0:
+#     print("Not Prime")
+#     flag=0
+#     break
+# if flag==1:
+#   print("Prime Number") 
 
-  '''Task 7: Power and Roundoff'''
+'''Task 7: Power and Roundoff'''
 print("***** Task 7: ***** ")
 print()
 #pow(x,y) : Computes x to the power of y.
 # round(number, digits): Will round up the number to decimal point specified by digits.
 
 # Uncomment the statements below and observe the result   
-#print(pow(3,2))
-#print(round(3.14159,2))
+# print(pow(3,2))
+# print(round(3.14159,2))
 
 
 '''Task 8: Let's go for lunch'''
@@ -120,5 +143,7 @@ print()
 # They decided to split the bill amount of INR 187.93 into two equal parts. The tip money which is 20% of the bill amount is added to the total amount.
 # Can you write a program to help calculate the total bill amount and how much each needs to pay.
 
+bill = (187.93 * 1.2) / 2
+print("Here is your bill: ", round(bill,2))
 
 '''Great! You are getting really good with working with built-in functions.'''

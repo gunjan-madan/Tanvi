@@ -8,15 +8,18 @@ print()
 # Note that the position of the item starts with 0
 #For example:
 
-# fruits = ["Banana", "Kiwi", "Apple", "Grapes"]
-# print(fruits)
-# print(fruits[0])
-# print(fruits[1])
-# print(fruits[2])
-# print(fruits[3])
+fruits = ["Banana", "Kiwi", "Apple", "Grapes"]
+print(fruits)
+print(fruits[0])
+print(fruits[1])
+print(fruits[2])
+print(fruits[3])
 
 '''Task- Use For Loop'''
 # Can you change the code to print the list of fruits using a for loop?
+
+for i in fruits:
+  print(i)
 
 '''Task 2:  Grocery Dam'''
 print("****** Task 2: *****")
@@ -26,28 +29,36 @@ print()
 # Vegetables: Lettuce, Spinach, Carrots, Corn, Tomato
 # Can you create a separate Python list for the bakery items and vegetables, and display the output?
 
+bakery = ["Bread", "Bagels", "Muffins", "Cookies", "Croissant"]
+vegetables = ["Lettuce", "Spinach", "Carrots", "Corn", "Tomato"]
+print("Bakery List: ")
+for i in bakery:
+  print(i)
+print("Vegetable List: ")
+for i in vegetables:
+  print(i)
 
 ''' Task 3: Changes to a list '''
 print("***** Task 3: *****")
 print()
 print("***Replacing an item in a list***")
 spaceobj=["rocket","planet","asteroid"]
-#spaceobj[1]="alien"
-#print(spaceobj)
+spaceobj[1]="alien"
+print(spaceobj)
 #print()
 print("***Adding an item to the end of the list***")
-#spaceobj.append("moon")
-#print(spaceobj)
-#print()
+spaceobj.append("moon")
+print(spaceobj)
+print()
 print("***Deleting an item to the list***")
-#del spaceobj[1]
-#print(spaceobj)
+del spaceobj[1]
+print(spaceobj)
 print('***Count of particular item in a list***')
-#print(spaceobj.count("rocket"))
-#print(spaceobj.count("alien"))
+print(spaceobj.count("rocket"))
+print(spaceobj.count("alien"))
 print('***Insert at a particular index***')
-# spaceobj.insert(2,"rock")
-# print(spaceobj)
+spaceobj.insert(2,"rock")
+print(spaceobj)
 
 '''Task 4: More to append'''
 print("***** Task 4: ******")

@@ -8,6 +8,14 @@ print()
 # - A random selection of colour code [Colour codes to be used are:red,blue,pink,yellow]
 #- A randomly generated number between 1 and 100
 # - A random selection of special characters (Special characters to be used are: $,#,@,!) 
+import random
+import datetime
+password = 0
+color = ["red", "blue", "pink", "yellow"]
+year = datetime.datetime.now().year
+password = random.choice(color) + year + 
+  
+  
 
 
 

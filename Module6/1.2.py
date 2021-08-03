@@ -35,24 +35,24 @@ print()
 # Set a default value for the argument
 # Hint : Use if-else in the function
 
-def num(x = 0, y = 0):
-  if x < y:
-    return y
-  elif y < x:
-    return x
-  else:
-    return 0
-numb=num()
-if numb ==0:
-  print("Both numbers are equal.")
+# def num(x = 0, y = 0):
+#   if x < y:
+#     return y
+#   elif y < x:
+#     return x
+#   else:
+#     return 0
+# numb=num()
+# if numb ==0:
+#   print("Both numbers are equal.")
 
-x = int(input("Enter your 1st value: "))
-y = int(input("Enter your 2nd value: "))
-result = num(x , y)
-if result==0:
-  print("Both numbers are equal.")
-else:
-  print("Your greater number is ", result)
+# x = int(input("Enter your 1st value: "))
+# y = int(input("Enter your 2nd value: "))
+# result = num(x , y)
+# if result==0:
+#   print("Both numbers are equal.")
+# else:
+#   print("Your greater number is ", result)
 
 ''' Task 3: Factorials '''
 print("***** Task 3: *****")
@@ -61,7 +61,35 @@ print()
 # The factorial of a number is the product of all the integers from 1 to that number. 
 # For example, the factorial of 5 is 1*2*3*4*5 = 120 
 
+# def factorial(numb):
+#   factorial = 1
+#   for i in range(numb): 
+#     factorial = factorial * (i + 1)
+#   return factorial
+
+# numb = int(input("Enter your number: "))  
+# print("Here is your result: ", factorial(numb))
+
+
 ''' Task 4: LCM '''
 print("***** Task 3: *****")
 print()
 # Create a function to find the LCM of two numbers.
+
+def leastc(x,y):
+  if x > y:
+    greater = x
+    
+  elif x < y:
+    greater = y
+
+  while True:
+    if (greater % y == 0) and (greater % x == 0):
+      LCM = greater
+      break
+    greater = greater + 1
+  return LCM
+
+x = int(input("Enter your 1st number: "))
+y = int(input("Enter your 2nd number: "))
+print("LCM: ", leastc(x,y))

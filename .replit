@@ -1,2 +1,2 @@
 language = "bash"
-run = "python Module7/1.2.py"
+run = "python ModuleC/1.2.py"

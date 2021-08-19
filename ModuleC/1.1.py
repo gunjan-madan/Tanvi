@@ -5,22 +5,22 @@ print()
 #Uncomment the statements below and observe the code:
 
 ## Creating a class called car
-#class car:
- ## init method 
- #def __init__(self, mileage,model,color):
-   #self.mileage=mileage
-   #self.model=model
-   #self.color=color
-  ## Method/Function to display car details
- #def displaydetails(self):
-   #print("Car model is: ",self.model)
-   #print("Car mileage is: ",self.mileage)
-   #print("Car color is: ",self.color)
+class car:
+ # init method 
+ def __init__(self, mileage,model,color):
+   self.mileage=mileage
+   self.model=model
+   self.color=color
+  # Method/Function to display car details
+ def displaydetails(self):
+   print("Car model is: ",self.model)
+   print("Car mileage is: ",self.mileage)
+   print("Car color is: ",self.color)
  
-## Create an object of the class
-#c = car("13km/l","Hyundai i10","Black")
-## Calling the class function
-#c.displaydetails()
+# Create an object of the class
+c = car("13km/l","Hyundai i10","Black")
+# Calling the class function
+c.displaydetails()
 
 
 # What did you observe? 
@@ -38,6 +38,12 @@ print()
 # - Car Model - Toyota Corolla Altis; Mileage-16 km/l ; Color-Red
 # Remember to display the details [Hint: Call the displaydetails() function]
 
+f = car("14.2 km/1", "Ford Ikon", "Blue")
+f.displaydetails()
+
+t = car("16 km/1", "Toyota Corolla Altis", "Red")
+t.displaydetails()
+
 
 
 ''' Task 2:  Get Classy '''
@@ -51,6 +57,20 @@ print()
 # After defining the class, create objects to display the details of students
 # Note: You can delete objects by using the del keyword
 
+class student:
+  def __init__(self, studentname, grade, school):
+    self.name = studentname
+    self.grade = grade
+    self.school = school
+
+  def display(self):
+    print("Student")
+    print("Name: ", self.name)
+    print("Grade: ", self.grade)
+    print("School: ", self.school)
+
+sam = student("Sam", "4th", "Ocean View Elementary")
+sam.display()
 
 ''' Task 3:  More Functions '''
 print("***** Task 3: ******")
@@ -60,11 +80,25 @@ print()
 # Create objects based on the user input
 # Display the data
 
+name = input("Enter name: ")
+grade = input("Enter grade: ")
+school = input("Enter school: ")
+
+i = student(name, grade, school)
+i.display()
+
 ''' Task 4:  Lets loop '''
 print("***** Task 4: ******")
 print()
 # How would you modify the program in  task 3, to display details of 3 students?
 # [Hint: Use loops]
+
+for i in range(3):
+  name = input("Enter name: ")
+  grade = input("Enter grade: ")
+  school = input("Enter school: ")
+  i = student(name, grade, school)
+  i.display()
 
 ''' Task 5: Multiple Objects '''
 print("***** Task 5: ******")
@@ -72,19 +106,19 @@ print()
 # What happens to variables/attributes when multiple objects of a class are created?
 # Will the same variables be used across the objects? 
 # Lets try it out by creating multiple student objects
-# Uncomment the statement, click Run and observe the output.
+#Uncomment the statement, click Run and observe the output.
 
-## Create an object of the class student
-#stu1 = student("Reya","7","TBS")
-#stu2 = student("Avi","8","Teamis")
-## Display the details
-#print("Name in stu1:",stu1.name)
-#print("Grade in stu1:",stu1.grade)
-#print("School in stu1:",stu1.school)
-#print()
-#print("Name in stu2:",stu2.name)
-#print("Grade in stu2:",stu2.grade)
-#print("School in stu2:",stu2.school)
+# Create an object of the class student
+stu1 = student("Reya","7","TBS")
+stu2 = student("Avi","8","Teamis")
+# Display the details
+print("Name in stu1:",stu1.name)
+print("Grade in stu1:",stu1.grade)
+print("School in stu1:",stu1.school)
+print()
+print("Name in stu2:",stu2.name)
+print("Grade in stu2:",stu2.grade)
+print("School in stu2:",stu2.school)
 
 # For every object a separate copy of the variables is created. 
 # These variables are called instance variables.

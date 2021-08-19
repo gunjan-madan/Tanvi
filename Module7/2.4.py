@@ -4,12 +4,12 @@
 print("****** Task 1: ******")
 print()
 # Uncomment the below statements, click Run and observe the output?
-# members={"MN012":{"Beth","9823628678"},
-#        "MN890":{"Noah","9710234573"},
-#        "MN456":{"Tia","9563029266"},
-#        "MN347":{"Sean","9025394528"}}
-# for  i in members:
-#  print(members[i]) 
+members={"MN012":{"Beth","9823628678"},
+       "MN890":{"Noah","9710234573"},
+       "MN456":{"Tia","9563029266"},
+       "MN347":{"Sean","9025394528"}}
+for  i in members:
+ print(members[i]) 
 
 '''Task: Create and Iterate'''
 #Create a dictionary for Employee IDs as keys and Storing name and designation
@@ -20,6 +20,11 @@ print()
 # ID: PY100  Name: Michael   Designation: Tester
 
 #Iterate the list using for loop
+
+employee = {"PY001" : ["James", "Developer"], "PY102" : ["Alex", "Team Lead"], "PY440" : ["Keith", "Designer"], "PY324" : ["Susan", "Project Manager"], "PY100" : ["Michael", "Tester"]}
+
+for i in employee:
+  print(employee[i])
 
 ''' Task 2: Set the Value '''
 print("****** Task 2: ******")
@@ -43,20 +48,34 @@ print()
 # ID: PY440  Name: Keith   Designation: Solution Designer
 # ID: PY500  Name: Kiya   Designation: Designer
 
+employee.update({"PY440": {"Keith", "Solution Designer"}})
+employee.update({"PY500": {"Kiya", "Designer"}})
+print(employee)
+
 ''' Task 3: Can you find it? '''
 print("****** Task 3: ******")
 print()
 # Uncomment the statements and click Run
-#translator={"Book":"Libro",
-#          "Details":"Detalle",
-#          "Number":"Número",
-#          "Name":"Nombre",
-#          "Days":"Dias",
-#          "Weeks":"Semanas"}
-#if "Days" in translator:
-# print("Found the word")
-#else:
-# print("Word not found")
+translator={"Book":"Libro",
+         "Details":"Detalle",
+         "Number":"Número",
+         "Name":"Nombre",
+         "Days":"Dias",
+         "Weeks":"Semanas"}
+if "Days" in translator:
+  print("Found the word")
+else:
+  print("Word not found")
 
 '''Task: Find'''
 # In the employee dictionary, find if the keys "PY102" and "PY120" are available.
+
+if "PY102" in employee:
+  print("PY102 found")
+else:
+  print("PY102 not found")
+
+if "PY120" in employee:
+  print("PY120 found")
+else:
+  print("PY120 not found")

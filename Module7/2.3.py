@@ -4,9 +4,9 @@ print('*** Multiple books by one author***')
 print()
 #If there are multiple books by authors and you want to group them together.
 # Uncomment the statements below and click Run.
-# bookdetails={"SN1":["Dr.Seuss","The Cat in the Hat"],
-#             "SN2":["E. B. White","Charlotte's Web"]}
-# print(bookdetails["SN1"])
+bookdetails={"SN1":["Dr.Seuss","The Cat in the Hat"],
+            "SN2":["E. B. White","Charlotte's Web"]}
+print(bookdetails["SN1"])
 
 
 print('*** Task: Groups***')
@@ -18,6 +18,10 @@ print()
 # MN347,Sean,9025394528
 # Your program should print the details of all the members
 # Hint: Assign a set of values to the membership number
+
+library = {"MN012" : ["Beth", "9823628678 "], "MN890" : ["Noah", "9710234573"], "MN456" : ["Tia", "9563029266"], "MN347" : ["Sean" , "9025394528"]}
+
+print(library)
 
 ''' Task 2:  Add to the Stack '''
 print("****** Task 2: ******")
@@ -34,7 +38,12 @@ print()
 # Once you have added the members, create a copy of the dictionary.
 # A copy of the dictionary can be created using the copy() function
 # For example:
-#membercopy=members.copy()
+# membercopy = members.copy()
+library["MN908"] = "Mita", "9870987699"
+library["MN231"] = "Sandra", "9578091872"
+library["MN616"] = "Ayur", "9109725534"
+library["MN990"] = "Sara", "9320997486"
+print(library)
 
 
 ''' Task 3: Pop Hop '''
@@ -49,7 +58,10 @@ print()
 # Ayur -> Membership Number: MN616
 # Check the length of the dictionary after removing the members. [Hint: Use the len() function]
 
-
+print(len(library))
+library.pop("MN012")
+library.pop("MN616")
+print(len(library))
 
 ''' Task 4: Merge to Surge '''
 print("****** Task 4: ******")
@@ -69,3 +81,10 @@ print()
 # Mr.Bumblebee then wants you to combine these two dictionaries into one called  Library Details. To combine dictionaries you need to specify it as:
 #newdictionary={“Key1”:dictionary1,
 #               “Key2”:dictionary2}
+
+Library = {"Acquisition Section" : "Receives requests  for new books", "Classification Section": "Subject wise classification of books", "IT Section" : "Provides automated,digital Library Service", "Reference Section" : "Consists of encyclopaedias, and reference books"}
+
+Membership = {"Full" : "Full access to the Library Services", "Associate" : "Borrowing rights", "Remote" : "Access to Digital Services"}
+
+Detail = {"Lib" : Library, "Mem" : Membership}
+print(Detail)

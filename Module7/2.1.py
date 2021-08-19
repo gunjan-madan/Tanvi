@@ -11,34 +11,34 @@ print()
 books={"J.K.Rowling":"Philosopher's Stone", 
           "Roald Dahl":"Matilda", 
           "O.Henry":"The Last Leaf"}
-# print(books)
-# print()
+print(books)
+print()
 
 print('*** Find the book ***')
 print()
 # To access an item in the dictionary you need to specify the key.
 # For example, to access the book written by Roald Dahl, you need to type:
 
-# print(books["Roald Dahl"])
-# print(books.get("Roald Dahl"))
-# print()
+print(books["Roald Dahl"])
+print(books.get("Roald Dahl"))
+print()
 
 
 ''' Values and Keys '''
 print("****** Task 4: ******")
 print()
 #To view all the values or keys in a dictionary 
-# print(books.values()) 
+print(books.values()) 
 #will print all the values of the dictionary librarians
-# print(books.keys()) 
+print(books.keys()) 
 #will print all the keys of the dictionary librarians
 
 
 print('*** Add more items***')
 print()
 # If you had to add the book “The Secret Seven” authored by Enid Blyton, you would type:
-# books["Enid Blyton"]="The Secret Seven"
-# print(books)
+books["Enid Blyton"]="The Secret Seven"
+print(books)
 
 #Dictionaries cannot have two items with the same key. Duplicate keys will overwrite existing values.
 
@@ -50,24 +50,24 @@ print()
 # To remove a key-value pair from the you need to use the pop()  method.
 # The pop() method removes the item with the specified key name. 
 
-# books={"J.K.Rowling":"Philosopher's Stone", 
-#           "Roald Dahl":"Matilda", 
-#           "O.Henry":"The Last Leaf"}
-# books.pop("Roald Dahl")
-# print(books)
+books={"J.K.Rowling":"Philosopher's Stone", 
+          "Roald Dahl":"Matilda", 
+          "O.Henry":"The Last Leaf"}
+books.pop("Roald Dahl")
+print(books)
 
 print(''' Clear and Delete''')
 print()
 #clear will empty the dictionary however it exists as empty
 
 
-# myCar = {
-#   "brand": "Ford",
-#   "model": "Mustang",
-#   "year": 1964
-# }
-# myCar.clear()
-
+myCar = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+myCar.clear()
+print(myCar)
 
 #Delete will delete the dictonary.
 # myCar = {
@@ -88,3 +88,13 @@ print()
 #Update the age to 12
 #Remove city and add address:DownTown 
 
+info = {
+  "name":"john",
+  "age":"11",
+  "city":"downtown",
+  "grade":"6th"
+}
+info["age"] = "12"
+info.pop("city")
+info["address"] = "downtown"
+print(info)

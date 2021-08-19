@@ -13,12 +13,12 @@ import datetime
 password = 0
 color = ["red", "blue", "pink", "yellow"]
 year = datetime.datetime.now().year
-password = random.choice(color) + year + 
+special = ["$","#","@","!"]
+
+password = random.choice(color) + str(year) + random.choice(special) + str(random.randint(1,100))
+
+print("Here is your ID: ", password)
   
-  
-
-
-
 ''' Task 2: Duplicate or not '''
 print("****** Task2: ******")
 print()
@@ -27,3 +27,19 @@ print()
 # If the item exists, display a message saying "Item exists"
 # If the item does not exist, append the item to the list and display the entire list
 # The existing list has the following items:  tables, chairs, bed, dresser
+
+lists = ['chair', 'table', 'bed', 'dresser', 'desk']
+furniture = input("Enter your furniture: ")
+flag = True
+for i in lists:
+  if i == furniture.lower():
+    print("Item Exists")
+    flag = False
+    break
+if flag == True:
+  print("Item does not exist")
+  lists.append(furniture.lower())
+  print(lists)
+
+
+

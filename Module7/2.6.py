@@ -18,6 +18,9 @@ print()
 # Pear - 15
 # Print the stock after creating the dictionary
 
+items = {"banana" : 10, "apple" : 15, "orange" : 32, "pear" : 15}
+print(items)
+
 '''Task 2: Create the price list'''
 print("***** Task 2: *****")
 print()
@@ -28,12 +31,27 @@ print()
 # Orange - 60
 # Pear - 90
 
+pricing = {"banana" : 20, "apple" : 80, "orange" : 60, "pear" : 90}
+print(pricing)
+
 '''Task 3: Getting the Shopping List'''
 print("***** Task 3: *****")
 print()
 # Write the code to get the quantity of each item from the user.
 # If the user does not want a particular item, they need to enter 0.
 # Hint: Create a copy of the item list and get the user to enter the quantity for each item.
+
+
+shop = items.copy()
+for i in shop:
+  print("Enter your order for ", i )
+  order = input()
+
+  shop[i] = int(order)
+  if order == 0:
+    break
+print(shop)
+
 
 '''Task 4: Compute the Bill'''
 print("***** Task 4: *****")
@@ -42,5 +60,16 @@ print()
 # The function must:
 # - Check the stock of items
 # - Display the total price
+
+def bill(shoppinglist):
+  price = 0
+  for i in items:
+    if shoppinglist[i] > items[i]:
+      print(i, ": Out of Stock")
+    else:
+      price = price + shoppinglist[i] * pricing[i]
+  print("Here is your price: ", price, "\nPrice for out of stock items not included.")
+      
+bill(shop)
 
 '''Brilliant!! You have automated the inventory related tasks.. Awesome!!'''

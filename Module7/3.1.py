@@ -5,9 +5,9 @@
 print("***** Task 1: *****")
 print()
 # To access tuple items, you specify the  positional index number, inside square brackets.
-# mytuple = ("red", "blue", "green")
-#for i in range(3):
-# print("Element ",i," is",mytuple[i])
+mytuple = ("red", "blue", "green")
+for i in range(3):
+  print("Element ",i," is",mytuple[i])
 
 
 
@@ -23,6 +23,11 @@ print()
 # - Get the name of the new employee as input
 # - Randomly assign a code from the tuple to the new employee [Hint: Use the random.choice() function]
 
+import random
+employ = ("ap089", "ba42n", "ch6r7y", "78ange", "ki612", "mel303", "458go")
+name = input("Enter the name of the employee: ")
+code = random.choice(employ)
+print("Hi ", name, " The code is ", code)
 
 ''' Task 3: Code (Dis)organized '''
 print("***** Task 3: *****")
@@ -31,18 +36,18 @@ print()
 # He has written the code and wants to check if it works. 
 # Uncomment the statements and observe the result.
 
-#mytuple[5]="ben405"
-#print(mytuple[5])
+# mytuple[5]="ben405"
+# print(mytuple[5])
 
 # What did you observe?
 # You cannot change its values. Tuples are unchangeable.
 
 # Here is a workaround. Uncomment the statement below and click Run.
 
-#y = list(mytuple)
-#y[5] = "ben405"
-#mytuple = tuple(y)
-#print(mytuple)
+y = list(mytuple)
+y[2] = "ben405"
+mytuple = tuple(y)
+print(mytuple)
 
 # Here we use the swapping technique. 
 # - First convert the tuple into a list
@@ -61,14 +66,26 @@ print()
 # - If the number of items is more than 10, create a new tuple to add the items. 
 # Hint 1: Use len() function to find the number of items. For ex:len(mytuple)
 # Hint 2: Use swapping technique (shown in previous task) to add items
+add = ("we342","kl782","pr907","sh149")
+if len(employ) < 10:
+  y = list(employ)
+  for i in range(4):
+    y.append(add[i])
+  employ = tuple(y)
+  print(employ)
+else:
+  print(add)
+
+
+
 
 ''' Task 5: Present or absent '''
 print("***** Task 5: *****")
 print()
 # Uncomment the statements below and click Run
 
-#x = mytuple.count("pr907")
-#print(x)
+x = employ.count("pr907")
+print(x)
 
 # What did you observe? 
 # count() function returns the number of occurrences of a search string.
@@ -76,3 +93,9 @@ print()
 #  - Takes the input code from the user
 #  - Checks if it is already present in the tuple
 #  - Displays a message “Already available, if present
+id = input("Enter your code: ")
+x = employ.count(id)
+if x == 0:
+  print("Not available")
+else:
+  print("Already Available")

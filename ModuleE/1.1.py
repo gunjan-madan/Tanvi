@@ -5,22 +5,22 @@ print("***** Task 1: *****")
 print()
 # Uncomment each block of code, one at a time, and analyze the output
 ## Code Block 1
-#num=1
-#if num == 1
- #print("What is the output?")
+num=1
+if num == 1:
+ print("What is the output?")
  
 ## Code Block 2
-#def incrementsal(sal):
-# salary = sal*20/100
-# return salary
-## Call incrementsal() to get the incremented total salary
-#print(incrementsal(2000))
+def incrementsal(sal):
+  salary = sal*20/100
+  return salary
+# Call incrementsal() to get the incremented total salary
+print(incrementsal(2000))
  
 ## Code Block 3
-#def add(num1,num2):
-# print(num1+num2)
-## Call add() to get the total
-#add("st",12)
+# def add(num1,num2):
+#   print(num1+num2)
+# # Call add() to get the total
+# add("st",12)
 
 # What do you think happened in each code block? 
 # Here we are looking at three types of error
@@ -45,21 +45,21 @@ print()
 # Uncomment the statement below, click Run 
 
 
-#try:
-# print(y)
-#except:
-# print("An exception occurred")
+try:
+  print(y)
+except:
+  print("An exception occurred")
 
 
 # What did you observe?
 # The try block will generate an error, because 'y' is not defined
 # Uncomment the statement below, click Run
 
-#try:
+# try:
 #  print("Enjoy your coding classes")
-#except:
+# except:
 #  print("Something went wrong")
-#else:
+# else:
 #  print("All is well")
  
 # What did you observe? 
@@ -71,6 +71,15 @@ print("***** Task 2: *****")
 print()
 # Write a program that asks the user to enter two numbers and displays the sum if numbers are entered else displays an error message.
 
+# try:
+#   enter1 = int(input("Enter first number: "))
+#   enter2 = int(input("Enter second number: "))
+#   sums = enter1 + enter2
+# except:
+#   print("Something went wrong")
+# else:
+#   print("Sum: ", sums)
+
 
 ''' Task 3: Raise the Error '''
 print("***** Task 3: *****")
@@ -79,16 +88,19 @@ print()
 # The error message can be customized.
 # Uncomment the statements and click Run.
 
-#y = 10
-#if y > 5:
+# y = 10
+# if y > 5:
 #    raise Exception("x should not exceed 5.")
 
 # What did you observe? 
 # You will notice that the custom error message is displayed when the error occurs
 # Write a program asking the user to enter a username which is not more than 15 characters in length. An exception should be raised if the length is greater than.
 
+# username = input("Enter your username:")
+# if len(username) > 15:
+#   raise Exception("Username length should not exceed 15")
 
-''' Task 4: Fix the Calculator '''
+# ''' Task 4: Fix the Calculator '''
 print("***** Task 4: *****")
 print()
 # Do you remember you had created the simple Calculator App in Chapter 3? 
@@ -99,47 +111,63 @@ print()
 
 
 
-# def add():
-#   a= int(input("Enter the first number:"))
-#   b= int(input("Enter the second number:"))
-#   ans=a+b
-#   return ans
+def add():
+  try:
+    a= int(input("Enter the first number:"))
+    b= int(input("Enter the second number:"))
+    ans=a+b
+  except:
+    print("Something is wrong in add")
+  else:
+    print(ans)
   
-# def subtract():
-#   a= int(input("Enter the first number:"))
-#   b= int(input("Enter the second number:"))
-#   ans=a-b
-#   return ans
+def subtract():
+  try:
+    a= int(input("Enter the first number:"))
+    b= int(input("Enter the second number:"))
+    ans=a-b
+  except:
+    print("Something is wrong in subtract")
+  else:
+      print(ans)
 
 
-# def multiply():
-#   a= int(input("Enter the first number:"))
-#   b= int(input("Enter the second number:"))
-#   ans=a*b
-#   return ans
+def multiply():
+  try:
+    a= int(input("Enter the first number:"))
+    b= int(input("Enter the second number:"))
+    ans=a*b
+  except:
+    print("Something is wrong in multiply")
+  else:
+    print(ans)
 
 
-# def divide():
-#   a= int(input("Enter the first number:"))
-#   b= int(input("Enter the second number:"))
-#   ans=a/b
-#   return ans
+def divide():
+  try:
+    a= int(input("Enter the first number:"))
+    b= int(input("Enter the second number:"))
+    ans=a/b
+  except:
+    print("Something is wrong in divide")
+  else:
+    print(ans)
 
+try:
+  print("Welcome to The Calculator")
+  print("Press 1 to add two numbers.\nPresss 2 to subtract two numbers.\nPress 3 to multiply two numbers.\nPress 4 to divide two numbers.")
 
-# print("Welcome to The Calculator")
-# print("Press 1 to add two numbers.\nPresss 2 to subtract two numbers.\nPress 3 to multiply two numbers.\nPress 4 to divide two numbers.")
+  i= input("Enter your choice:")
+  if i=="1":
+    add()
+  elif i=="2":
+    subtract()
+  elif i=='3':
+    multiply()
+  elif i=='4':
+    divide()
+  else:
+    print("Please provide a valid input.")
 
-
-# i= input("Enter your choice:")
-
-# if i=="1":
-#   add()
-# elif i=="2":
-#   subtract()
-# elif i=='3':
-#   multiply()
-# elif i=='4':
-#   divide()
-# else:
-#   print("Please provide a valid input.")
-
+except:
+  print("Something is wrong in print")
